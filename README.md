@@ -30,6 +30,7 @@ statistiche, una che usa le partite come unità temporale per mostrare l'andamen
 di una partita tiro per tiro di un certo giocatore.
 
 La terza è "varie", alla quale appartengono tutte le funzioni che non appartengono a nessuna delle 2 sezioni precedenti.
+
 L'ultima è "streamlit", che è il codice dell'applicazione vera e propria, che sfrutta gli import di tutte le altre funzioni per generare i dataset e i grafici
 tramite gli input dell'utente.
 
