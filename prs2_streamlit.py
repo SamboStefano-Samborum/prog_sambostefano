@@ -235,7 +235,6 @@ Gamelog completo con tutte le statistiche ufficiali NBA""")
         st.divider()
         game_id=lastlog[0, "Game_ID"]
         events=ds.player_modifiedevents_list(game_id, player)
-        #st.write("Andamento della percentuale tiro per tiro, pallino verde = canestro (make), pallino rosso = errore (miss).")
         st.altair_chart(gr.singlegame_fg_graph(events))
         st.divider()
         st.divider()
@@ -243,7 +242,6 @@ Gamelog completo con tutte le statistiche ufficiali NBA""")
         playerlist=[player, c, e, s]
         statslist.append(playerlist)
 
-    #st.write("Grafico a barre che confronta tutte e 5 le partite con canestri (makes), errori (misses) e streaks.")
     st.altair_chart(gr.top5_graph(statslist), use_container_width=True)
     
     return_home_button()
