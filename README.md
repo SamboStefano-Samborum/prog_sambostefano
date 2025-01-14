@@ -15,6 +15,7 @@ eventi desiderati che, essendo un analisi sulle percentuali di tiro, sono appunt
 stati ricavati:
 - i canestri, ossia gli esiti positivi, individuati come C o Makes;
 - gli errori, ossia gli esiti negativi, E o Misses.
+
 Partendo da questi, si sono anche ricavate le streaks (strisce di 3 esiti consecutivi uguali) e, sopratutto, la percentuale di successo cercata (la FG%, per field
 goal percentage), ossia N°canestri/(N°canestri + N°errori): combinando questa alle sequenze di esiti precedenti (fino a un massimo di 3), usando la formula della
 probabilità condizionata P(successo|condizione)=P(successo ∩ condizione)/P(condizione), si sono trovate le singole probabilità condizionate ad ogni sequenza di
