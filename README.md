@@ -66,5 +66,5 @@ APPROFONDIMENTI FUTURI
 Durante la realizzazione del progetto mi è capitato di leggere un capitolo di "Cognitive Psychology" di Thomas Gilovich, psicologo e professore alla Cornell 
 University che, proprio in quel capitolo, fu uno dei primi a confutare il mito della mano calda (defindendolo una "cognitive illusion"), usando i metodi statistici 
 dell'epoca (il libro uscì nel 1985) e usando dei dati riferiti alla stagione del 1980-81. Ho deciso quindi, come probabile progetto di tesi, di approfondire le
-analisi statistiche effettuate da Gilovich, andando a creare un modello statistico apposito usando le stesse funzioni di questo progetto per potermi ricavare i
-dataset riferiti alla stagione attuale, per verificare se si arriva alle stesse conclusioni alle quali lo psicologo arrivò 40 anni fa.
+analisi statistiche effettuate da Gilovich, andando a creare un modello statistico sui dataset ricavati proprio con le funzioni di questo progetto, per verificare 
+se si arriva alle stesse conclusioni alle quali lo psicologo arrivò 40 anni fa.
