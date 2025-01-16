@@ -1,4 +1,7 @@
 # prog_sambostefano
+!!! Per far partire l'applicazione il comando è uv run streamlit run prs2_streamlit.py !!!
+
+
 INTRODUZIONE GENERALE
 
 Il progetto va ad effettuare un'indagine statistica su alcuni dati relativi alle partite della NBA, ossia la massima lega di pallacanestro americana e mondiale.
@@ -77,7 +80,10 @@ siano facili da sfruttare per creare funzioni tipo quelle di "dataset". In alter
 NBA "nba.com", ma non sono presenti analisi o approfondimenti come quelli svolti dall'applicazione.
 La prima estrazione dei dati è tutta nella funzione player_modifiedevents_list, di dataset: tutti gli eventi infatti sono divisi per molte variabili, tra cui 
 "description" che è una breve descrizione preimpostata dell'evento. Dalla description si è individuato un pattern dove tutti gli eventi che comprendevano MISS
-erano un tiro sbagliato mentre tutti gli eventi con PTS erano un tiro segnato. Da 
+erano un tiro sbagliato mentre tutti gli eventi con PTS erano un tiro segnato. Da qui, avendo il nome del giocatore, togliendo i free throw (evento particolare,
+da escludere dai tiri) e gli ast del giocatore (tiri effettuati da altri giocatori) vengono presi tutti i tiri presi, trasformandoli in una lista il cui ordine
+è quello cronologico dove C sono i canestri ed E gli errori. Successivamente tali liste si sono usate come dati per creare i dataframe necessari per le varie
+analisi usando la libreria polars e, in qualche caso, pandas. 
 
 APPROFONDIMENTI FUTURI
 
