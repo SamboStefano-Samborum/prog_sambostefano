@@ -70,11 +70,14 @@ sono sempre alla ricerca di nuovi dati da analizzare e sfruttare a proprio vanta
 quale giocatore far tirare in determinate situazioni: se, per esempio, un giocatore ha un'alta percentuale di successo dopo un errore, può essere che sfruttino la 
 cosa per prediligere un suo tiro in quella situazione.
 
-FONTI DI DATI
+DATI, FONTE E PREPROCESSING
 
 La fonte dei dati sono appunto i gamelogs messi a disposizione da nba_api, che elencano tutti gli eventi di tutte le partite di una certa stagione in modo che 
 siano facili da sfruttare per creare funzioni tipo quelle di "dataset". In alternativa sono visualizzabili in modo molto più user-friendly sul sito ufficiale dell 
 NBA "nba.com", ma non sono presenti analisi o approfondimenti come quelli svolti dall'applicazione.
+La prima estrazione dei dati è tutta nella funzione player_modifiedevents_list, di dataset: tutti gli eventi infatti sono divisi per molte variabili, tra cui 
+"description" che è una breve descrizione preimpostata dell'evento. Dalla description si è individuato un pattern dove tutti gli eventi che comprendevano MISS
+erano un tiro sbagliato mentre tutti gli eventi con PTS erano un tiro segnato. Da 
 
 APPROFONDIMENTI FUTURI
 
